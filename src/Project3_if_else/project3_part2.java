@@ -1,5 +1,8 @@
+//Project 3 Part2
+
 package Project3_if_else;
 import java.util.Scanner;
+
 public class project3_part2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

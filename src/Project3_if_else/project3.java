@@ -1,8 +1,9 @@
+//Project3 Part 1
+
 package Project3_if_else;
 
 import java.util.Random;
 import java.util.Scanner;
-
 public class project3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
