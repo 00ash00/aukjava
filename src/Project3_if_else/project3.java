@@ -7,7 +7,7 @@ public class project3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // If/else and switch Syntax
+        // if/else and switch Syntax
         System.out.print("Enter a number: ");
         int num = in.nextInt();
 
@@ -17,7 +17,7 @@ public class project3 {
             System.out.println("The number is not equal to 0.");
         }
 
-        //String comparison
+        //string comparison
         System.out.print("Enter a word: ");
         String word = in.next();
         String targetWord = "Java";
@@ -28,7 +28,7 @@ public class project3 {
             System.out.println("You did not enter 'Java'.");
         }
 
-        //Logical operators
+        //logical operators
         System.out.print("Enter your age: ");
         int age = in.nextInt();
 
@@ -38,7 +38,7 @@ public class project3 {
             System.out.println("You are either below 18 or above 60 years old.");
         }
 
-        //Nested if/else conditionals
+        //nested if/else conditionals
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = in.nextInt();
 

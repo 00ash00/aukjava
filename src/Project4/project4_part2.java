@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class project4_part2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         char repeat;
 
         do {

@@ -27,10 +27,10 @@ public class project3_part2 {
             return "University.";
         } else if (age > 23 && age <= 60) {
             return "Work.";
-        } else if (age > 60) {
-            return "Retired.";
-        } else {
+        } else if (age > 60 && age <= 100) {
             return "We couldn't determine your daily activity.";
+        } else {
+            return "";
         }
     }
 }

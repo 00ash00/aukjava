@@ -6,22 +6,25 @@ public class project4_part3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        char repeat = 'Y';
+        while (true) {
+            System.out.println("Input any string:");
+            String str = in.nextLine();
 
-        while (repeat == 'Y' || repeat == 'y') {
-            // input any string
-            System.out.print("Enter a string: ");
-            String userInput = in.nextLine();
+            for (int i = str.length() - 1; i >= 0; i--) {
+                char c = str.charAt(i);
+                System.out.print(c);
+            }
 
-            // string in reversed order
-            String reversedString = new StringBuilder(userInput).reverse().toString();
-            System.out.println("Reversed string: " + reversedString);
+            System.out.println("\nWould you like to continue (Y/N)?");
+            String str2 = in.nextLine();
 
-            // user wants to continue
-            System.out.print("Do you want to continue? (Y/N): ");
-            repeat = in.nextLine().charAt(0);
+            if (str2.equalsIgnoreCase("N")) {
+                System.out.println("Ok, thank you!");
+                break;
+            } else if (!str2.equalsIgnoreCase("Y")) {
+                System.out.println("Incorrect information. Exiting.");
+                break;
+            }
         }
-
-        System.out.println("Goodbye!");
     }
 }
