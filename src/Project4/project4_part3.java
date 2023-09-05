@@ -18,10 +18,10 @@ public class project4_part3 {
             System.out.println("\nWould you like to continue (Y/N)?");
             String str2 = in.nextLine();
 
-            if (str2.equalsIgnoreCase("N")) {
+            if (str2.equals("N")) {
                 System.out.println("Ok, thank you!");
                 break;
-            } else if (!str2.equalsIgnoreCase("Y")) {
+            } else if (!str2.equals("Y")) {
                 System.out.println("Incorrect information. Exiting.");
                 break;
             }
