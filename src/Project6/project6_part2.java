@@ -29,8 +29,8 @@ public class project6_part2 {
 
     // input by user
     public static int[] inputArray(Scanner in, int length) {
-        int[] array = new int[length];
         System.out.println("Enter " + length + " elements for the array:");
+        int[] array = new int[length];
         for (int i = 0; i < length; i++) {
             array[i] = in.nextInt();
         }
@@ -83,6 +83,6 @@ public class project6_part2 {
                 return i;
             }
         }
-        return -1;
+        return -1; // return -1 if no such elements in array
     }
 }

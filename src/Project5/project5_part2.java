@@ -67,7 +67,7 @@ public class project5_part2 {
     public static char getYesOrNoInput(Scanner in, String message) {
         while (true) {
             System.out.println(message);
-            String response = in.next().trim().toLowerCase();
+            String response = in.next().trim().toLowerCase(); // .trims() to remove all useless spaces
             if (response.equals("y") || response.equals("n")) {
                 return response.charAt(0);
             } else {
