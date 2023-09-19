@@ -1,6 +1,5 @@
 package Project7;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -26,11 +25,13 @@ public class project7_part1 {
                 array = getUserInputArray(length);
             }
 
-            System.out.println("Given array: " + Arrays.toString(array));
+            System.out.print("Given array: ");
+            printArray(array);
 
             bubbleSort(array);
 
-            System.out.println("Sorted array: " + Arrays.toString(array));
+            System.out.print("Sorted array: ");
+            printArray(array);
 
             System.out.print("Do you want to repeat? (1 - Yes, 0 - No): ");
             int repeatOption = in.nextInt();
@@ -75,5 +76,16 @@ public class project7_part1 {
                 }
             }
         }
+    }
+
+    public static void printArray(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i]);
+            if (i != n - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 }
