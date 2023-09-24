@@ -107,8 +107,8 @@ class ArgumentConstructor {
     private int intValue;
     private String stringValue;
 
-    public ArgumentConstructor(int intValue, String stringValue) {
-        this.intValue = intValue;
+    public ArgumentConstructor(int intValue1, String stringValue) {
+        intValue = intValue1;
         this.stringValue = stringValue;
     }
 

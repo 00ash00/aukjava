@@ -30,9 +30,9 @@ public class project8_part1 {
         }
     }
 
-    public static void recursiveMethod() {
-        System.out.println("Hi");
-        recursiveMethod();
+   public static void recursiveMethod() {
+       System.out.println("Hi");
+       recursiveMethod();
     }
 }
 
