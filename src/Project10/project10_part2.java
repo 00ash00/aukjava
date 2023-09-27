@@ -8,7 +8,6 @@ public class project10_part2 {
         private int number;
         private int scores;
 
-        // constructor
         public BasketballPlayer(String name, int age, String team, int number, int scores) {
             this.name = name;
             this.age = age;
@@ -60,8 +59,8 @@ public class project10_part2 {
 
         // description
         public String getDescription() {
-            return "Player: " + name + "\nAge: " + age + "\nTeam: " + team + "\nNumber in team: " + number
-                    + "\nScores: " + scores;
+            return "Player: " + name + "\nAge: " + age + "\nTeam: " + team + "" +
+                    "\nJersey Number: " + number + "\nScores: " + scores;
         }
     }
 
