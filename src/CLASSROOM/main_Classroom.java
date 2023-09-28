@@ -4,19 +4,28 @@ import java.util.ArrayList;
 
 public class main_Classroom {
 
-    public static void main(String[] args) {
-        ArrayList<String> items = new ArrayList<>();
-            items.add("One");
-            items.add("Two");
-            items.add("Three");
-        for (int i = 0;
-             i < items.size(); i++) {
-            System.out.println(items.get(i));
+    public static class Assignment {
+
+        private String name;
+        private double grade;
+        private boolean isHomework;
+
+        public Assignment(String name, double grade, boolean isHomework) {
+            this.name = name;
+            this.grade = grade;
+            this.isHomework = isHomework;
         }
 
-        items.remove(2);
-        for (String str: items) {
-            System.out.println(str);
+        public void print() {
+            System.out.println("Name: " + name);
+            System.out.println("Grade: " + grade);
+            System.out.println("Is Homework: " + (isHomework ? "Yes" : "No"));
+        }
+
+        public static void main(String[] args) {
+            // Example of how to create and print an Assignment
+            Assignment assignment = new Assignment("Math Homework", 95.5, true);
+            assignment.print();
         }
     }
 
